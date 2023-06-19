@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:background="@drawable/edittext_rounded_background">
+
+    <TextView
+        android:id="@+id/tv_attendance_request_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/violet"
+        android:fontFamily="@font/lexend_regular" />
+
+    <Button
+        android:id="@+id/tv_attendance_request_accept"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_attendance_request_text"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_rounded_background"
+        android:fontFamily="@font/lexend_light"
+        android:gravity="center"
+        android:text="Accept"
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/tv_attendance_request_deny"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_attendance_request_accept"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_rounded_background"
+        android:fontFamily="@font/lexend_light"
+        android:gravity="center"
+        android:text="Deny"
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+
+</RelativeLayout>

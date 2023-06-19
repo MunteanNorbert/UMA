@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Spinner
+        android:id="@+id/spinner_subject"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:gravity="center_horizontal|bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/spinner_rounded_background"
+        android:entries="@array/year" />
+
+    <Button
+        android:id="@+id/button_show_subjects"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="List"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:fontFamily="@font/lexend_light"
+        android:background="@drawable/button_rounded_background"
+        android:layout_below="@id/spinner_subject"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/studentBottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/lexend_regular"
+        app:elevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/student_menu" />
+
+</RelativeLayout>

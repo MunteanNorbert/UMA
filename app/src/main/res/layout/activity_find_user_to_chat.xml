@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <AutoCompleteTextView
+        android:id="@+id/searchUserToChat"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="200dp"
+        android:hint="Enter username"
+        android:textColor="@color/violet"
+        android:textSize="20dp"
+        android:fontFamily="@font/lexend_light"
+        android:background="@drawable/spinner_rounded_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/startChat"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Start chat"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:fontFamily="@font/lexend_light"
+        android:background="@drawable/button_rounded_background"
+        android:layout_below="@id/searchUserToChat"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp" />
+
+    <Button
+        android:id="@+id/oldChats"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Chats"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:fontFamily="@font/lexend_light"
+        android:background="@drawable/button_rounded_background"
+        android:layout_below="@id/startChat"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/studentBottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/lexend_regular"
+        app:elevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/student_menu" />
+
+
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:layout_marginRight="80dp"
+        android:text="Check Attendance"
+        android:gravity="center_horizontal|bottom"
+        android:textColor="@color/violet"
+        android:textSize="40dp"
+        android:fontFamily="@font/lexend_regular" />
+
+    <Button
+        android:id="@+id/professor_lecture_attendance"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="Lecture Attendance"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:fontFamily="@font/lexend_light"
+        android:background="@drawable/button_rounded_background"
+        android:layout_below="@id/title_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"/>
+
+    <Button
+        android:id="@+id/professor_laboratory_attendance"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="Laboratory Attendance"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:fontFamily="@font/lexend_light"
+        android:background="@drawable/button_rounded_background"
+        android:layout_below="@id/professor_lecture_attendance"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/studentBottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/lexend_regular"
+        app:elevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/student_menu" />
+</RelativeLayout>

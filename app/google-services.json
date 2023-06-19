@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "66536404023",
+    "firebase_url": "https://licenta-3c62d-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "licenta-3c62d",
+    "storage_bucket": "licenta-3c62d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:66536404023:android:12ee323817d8649ef0fbb2",
+        "android_client_info": {
+          "package_name": "com.example.licenta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "66536404023-e5tsdid3b9f34gh2vr0kj6c6sdi5lfu0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSFI9Hx9sIWa8hrdGER6s2xkJ4S5cJXOc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "66536404023-e5tsdid3b9f34gh2vr0kj6c6sdi5lfu0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

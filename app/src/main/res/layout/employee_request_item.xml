@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:background="@drawable/edittext_rounded_background">
+
+        <TextView
+            android:id="@+id/tv_employee_request_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/violet"
+            android:fontFamily="@font/lexend_regular"/>
+
+        <TextView
+            android:id="@+id/tv_employee_request_sender_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_employee_request_message"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/violet"
+            android:fontFamily="@font/lexend_regular" />
+
+        <TextView
+            android:id="@+id/tv_employee_request_sender_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_employee_request_sender_name"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/violet"
+            android:fontFamily="@font/lexend_regular" />
+
+        <TextView
+            android:id="@+id/tv_employee_request_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_employee_request_sender_email"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/violet"
+            android:fontFamily="@font/lexend_regular" />
+
+        <TextView
+            android:id="@+id/tv_employee_request_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_employee_request_date"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/violet"
+            android:fontFamily="@font/lexend_regular"/>
+
+        <Button
+            android:id="@+id/tv_employee_request_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_employee_request_time"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_rounded_background"
+            android:fontFamily="@font/lexend_light"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="20dp"/>
+
+    </RelativeLayout>
