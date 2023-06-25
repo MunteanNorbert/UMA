@@ -15,7 +15,8 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -61,22 +62,20 @@ public class LoginActivity extends AppCompatActivity {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 if (task.isSuccessful()) {
-                                    FirebaseUser user = mAuth.getCurrentUser();
-                                    String userEmail = user.getEmail();
 
-                                    if (userEmail.contains("@student.com")) {
+                                    if (email.contains("@student.com")) {
                                         Intent intent = new Intent(LoginActivity.this, StudentActivity.class);
                                         startActivity(intent);
                                         finish();
-                                    } else if (userEmail.contains("@professor.com")) {
+                                    } else if (email.contains("@professor.com")) {
                                         Intent intent = new Intent(LoginActivity.this, ProfessorActivity.class);
                                         startActivity(intent);
                                         finish();
-                                    } else if (userEmail.contains("@employee.com")) {
+                                    } else if (email.contains("@employee.com")) {
                                         Intent intent = new Intent(LoginActivity.this, EmployeeActivity.class);
                                         startActivity(intent);
                                         finish();
-                                    } else if (userEmail.contains("@admin.com")) {
+                                    } else if (email.contains("@admin.com")) {
                                         Intent intent = new Intent(LoginActivity.this, AdminActivity.class);
                                         startActivity(intent);
                                         finish();

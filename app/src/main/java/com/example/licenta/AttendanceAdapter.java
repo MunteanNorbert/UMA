@@ -179,17 +179,17 @@ public class AttendanceAdapter extends RecyclerView.Adapter<AttendanceAdapter.At
                             }
                         });
 
+                        studentRef.child(studentUserID).child("notifications")
+                                .child(currentDate + ", " + currentTime)
+                                .setValue("Your " + selectedSubject + " " + part1 + " " + part2 + ", from "
+                                        + date + " at " + time + " o'clock has been denied.");
+
                         Intent intent = new Intent(context, ProfessorSubjectAttendanceRequestActivity.class);
                         intent.putExtra("selectedSubject", selectedSubject);
                         intent.putExtra("professorUserID2", professorUserID);
                         intent.putExtra("type",type);
                         intent.putExtra("type2",type2);
                         context.startActivity(intent);
-
-                        studentRef.child(studentUserID).child("notifications")
-                                .child(currentDate + ", " + currentTime)
-                                .setValue("Your " + selectedSubject + " " + part1 + " " + part2 + ", from "
-                                        + date + " at " + time + " o'clock has been denied.");
                     }
                 });
 

@@ -199,7 +199,7 @@ public class EmailAddActivity extends AppCompatActivity {
                 String user = email.substring(0, email.indexOf("@")).replace(".", "") + role;
 
 
-                if(!users.contains(user) && !email.contains(email) && (email.contains("@student.com") || email.contains("@professor.com")|| email.contains("@employee.com") || email.contains("@admin.com"))) {
+                if(!users.contains(user) && !emails.contains(email) && (email.contains("@student.com") || email.contains("@professor.com")|| email.contains("@employee.com") || email.contains("@admin.com"))) {
                     if (!email.isEmpty() || !role.isEmpty() || !firstName.isEmpty() || !lastName.isEmpty()) {
                         databaseRef.child(user).child("email").setValue(email);
                         databaseRef.child(user).child("first_name").setValue(firstName);

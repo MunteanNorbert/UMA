@@ -31,8 +31,8 @@ public class ChatActivity extends AppCompatActivity {
     private String senderPOV;
     private String receiverPOV;
 
-    DatabaseReference sDatabase;
-    DatabaseReference rDatabase;
+    private DatabaseReference sDatabase;
+    private DatabaseReference rDatabase;
 
     private ArrayList<Message> uMessageList;
     private ArrayList<Message> uMessageList2;

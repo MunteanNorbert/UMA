@@ -166,11 +166,11 @@ public class RegisterActivity extends AppCompatActivity {
                                                         @Override
                                                         public void onComplete(@NonNull Task<AuthResult> task) {
                                                             if (task.isSuccessful()) {
-                                                                String userId = mAuth.getCurrentUser().getUid();
+                                                                String userID = mAuth.getCurrentUser().getUid();
                                                                 User newUser = new User(username, firstname, lastname, email, category);
-                                                                mDatabase.child(userId).setValue(newUser);
+                                                                mDatabase.child(userID).setValue(newUser);
                                                                 if(category.equals("student")) {
-                                                                    mDatabase.child(userId).child("year").setValue(year);
+                                                                    mDatabase.child(userID).child("year").setValue(year);
                                                                 }
                                                                 Toast.makeText(RegisterActivity.this, "Registration successful", Toast.LENGTH_SHORT).show();
                                                                 finish();
