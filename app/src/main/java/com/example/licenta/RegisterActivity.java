@@ -86,7 +86,7 @@ public class RegisterActivity extends AppCompatActivity {
 
                         if (acceptedEmails.contains(email)) {
 
-                            Query query = emailsRef.child("accepted_emails").orderByChild("email").equalTo(email);
+                            Query query = emailsRef.orderByChild("email").equalTo(email);
                             query.addListenerForSingleValueEvent(new ValueEventListener() {
                                 @Override
                                 public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -114,9 +114,9 @@ public class RegisterActivity extends AppCompatActivity {
 
                                     for (DataSnapshot userSnapshot : snapshot.getChildren()) {
                                         String email1 = userSnapshot.child("email").getValue(String.class);
-                                        String username = userSnapshot.child("username").getValue(String.class);
+                                        String username1 = userSnapshot.child("username").getValue(String.class);
 
-                                        if (username.equals(username)) {
+                                        if (username1.equals(username)) {
                                             userExists = true;
                                             break;
                                         }
